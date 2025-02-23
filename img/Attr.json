@@ -1,0 +1,11 @@
+{
+    "name": "BasicNft",
+    "description": "NFT pic from 3 landers!",
+    "image": "ipfs://QmXAqAr5Gm6XCFcgri72PMMfw6YNRzcKV2hR1ePQCDhzAL",
+    "attributes": [
+        {
+            "trait_type": "with fish",
+            "value": 10
+        }
+    ]
+}
