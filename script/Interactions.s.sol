@@ -10,12 +10,23 @@ contract MintBasicNft is Script {
     string public constant PUG =
         "https://bafybeifqxrgnbcbqepadrwnvkaizb5fdnknlwkuq5ulgw5bnrho6bfzvem.ipfs.dweb.link?filename=Attr.json";
 
+    // function run() external {
+    //     //Get the address of the most rencently deployed BasicNft contract
+    //     address mostRecentDeployed = DevOpsTools.get_most_recent_deployment(
+    //         "BasicNft",
+    //         block.chainid
+    //     );
+    //     mintNftOnContract(mostRecentDeployed);
+    // }
+
+    // function mintNftOnContract(address contractAddress) public {
+    //     vm.startBroadcast();
+    //     BasicNft(contractAddress).mintNft(PUG);
+    //     vm.stopBroadcast();
+    // }
+
     function run() external {
-        //Get the address of the most rencently deployed BasicNft contract
-        address mostRecentDeployed = DevOpsTools.get_most_recent_deployment(
-            "BasicNft",
-            block.chainid
-        );
+        address mostRecentDeployed = 0x5fFf0Bc7d3ce0d303FDEE776354b7c9cAB25BCc6; // contract address
         mintNftOnContract(mostRecentDeployed);
     }
 
