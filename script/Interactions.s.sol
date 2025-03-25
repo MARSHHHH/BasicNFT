@@ -19,12 +19,12 @@ contract MintBasicNft is Script {
     //     mintNftOnContract(mostRecentDeployed);
     // }
 
-    // function mintNftOnContract(address contractAddress) public {
-    //     vm.startBroadcast();
-    //     BasicNft(contractAddress).mintNft(PUG);
-    //     vm.stopBroadcast();
+    //     function mintNftOnContract(address contractAddress) public {
+    //         vm.startBroadcast();
+    //         BasicNft(contractAddress).mintNft(PUG);
+    //         vm.stopBroadcast();
+    //     }
     // }
-
     function run() external {
         address mostRecentDeployed = 0x5fFf0Bc7d3ce0d303FDEE776354b7c9cAB25BCc6; // contract address
         mintNftOnContract(mostRecentDeployed);
